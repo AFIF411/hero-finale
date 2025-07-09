@@ -8,6 +8,8 @@ import ContactSection from "@/components/ContactSection";
 import { useCart } from "@/hooks/useCart";
 import LanguageSelector from "@/components/LanguageSelector";
 import { useLanguage } from "@/contexts/LanguageContext";
+import TestimonialsSection from "@/components/TestimonialsSection";
+
 
 const Index = () => {
   const [selectedPartyType, setSelectedPartyType] = useState<string | null>(null);
@@ -186,6 +188,8 @@ const Index = () => {
           })}
         </div>
       </section>
+
+      <TestimonialsSection />
 
       {/* Contact Section */}
       <ContactSection />

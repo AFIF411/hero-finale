@@ -12,21 +12,36 @@ interface Review {
 }
 
 const reviews: Review[] = [
-    { name: "Sarah B.",  rating: 5, message: "Service impeccable ! L’équipe répond vite et avec le sourire." },
-    { name: "Mohamed K.", rating: 4, message: "Très satisfait ; quelques détails à peaufiner mais je recommande." },
-    { name: "Amel R.",    rating: 5, message: "Une expérience fluide du début à la fin. Merci !" },
+    {
+        name: "Sarah B.",
+        rating: 5,
+        message: "Impeccable service! The team responds quickly and with a smile.",
+    },
+    {
+        name: "Mohamed K.",
+        rating: 4,
+        message: "Very satisfied; a few details to polish, but I definitely recommend.",
+    },
+    {
+        name: "Amel R.",
+        rating: 5,
+        message: "A smooth experience from start to finish. Thank you!",
+    },
 ];
 
 const TestimonialsSection = () => {
     return (
-        <section id="testimonials" className="py-16 bg-gray-50/60 dark:bg-gray-800/70">
+        <section
+            id="testimonials"
+            className="py-16 bg-gray-50/60 dark:bg-gray-800/70"
+        >
             <div className="container mx-auto px-4 max-w-6xl">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-green-600 via-violet-600 to-orange-600 bg-clip-text text-transparent">
-                        Avis de nos utilisateurs
+                        What Our Users Say
                     </h2>
                     <p className="text-xl text-gray-700 dark:text-gray-300">
-                        Ils parlent mieux de nous que nous-mêmes !
+                        They speak better for us than we do!
                     </p>
                 </div>
 
@@ -36,10 +51,16 @@ const TestimonialsSection = () => {
                             <CardHeader className="pb-2">
                                 <div className="flex items-center space-x-2">
                                     {Array.from({ length: review.rating }).map((_, idx) => (
-                                        <Star key={idx} className="w-5 h-5 fill-yellow-400 stroke-yellow-400" />
+                                        <Star
+                                            key={idx}
+                                            className="w-5 h-5 fill-yellow-400 stroke-yellow-400"
+                                        />
                                     ))}
                                     {Array.from({ length: 5 - review.rating }).map((_, idx) => (
-                                        <Star key={idx} className="w-5 h-5 text-gray-300 dark:text-gray-600" />
+                                        <Star
+                                            key={idx}
+                                            className="w-5 h-5 text-gray-300 dark:text-gray-600"
+                                        />
                                     ))}
                                 </div>
                             </CardHeader>
