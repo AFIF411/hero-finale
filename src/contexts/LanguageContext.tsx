@@ -49,11 +49,11 @@ const translations: Translations = {
     // Party types
     'party.soutenance.title': 'I plan my graduation party',
     'party.soutenance.description': 'Celebrate your academic success in style',
-    'party.nationale.title': 'I plan a national party',
+    'party.nationale.title': 'I plan a national event',
     'party.nationale.description': 'Organize a memorable patriotic event',
-    'party.religieuse.title': 'Religious party',
+    'party.religieuse.title': 'Religious event',
     'party.religieuse.description': 'Prepare an authentic spiritual celebration',
-    'party.scientifique.title': 'I plan a science party',
+    'party.scientifique.title': 'I plan a science event',
     'party.scientifique.description': 'Create an educational and fun event',
     'party.start': 'Start planning',
     
