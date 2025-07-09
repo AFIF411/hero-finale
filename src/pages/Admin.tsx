@@ -227,6 +227,7 @@ const Admin = () => {
                             </div>
 
 
+
                       <div className="space-y-3">
                         <h4 className="font-semibold text-sm text-gray-600 dark:text-gray-400">Informations client</h4>
                         <div className="space-y-2">
